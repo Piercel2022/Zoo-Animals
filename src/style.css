@@ -1,0 +1,21 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    
+}
+
+.contents {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}

@@ -1,8 +1,11 @@
-const body = document.querySelector('body');
+import './style.css';
 
 
+
+
+const body = document.querySelector(".contents");
   const getInfos = async() => {
-    result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
+   const result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
     const response = await result.json();
     console.log(response)
     response.forEach(element => {
@@ -13,13 +16,7 @@ const body = document.querySelector('body');
 
         body.appendChild(div);
     });
-
-    body.style.display = "flex";
-    body.style.gap = "20px";
-    body.style.flexWrap ="wrap";
   }
 
-
   getInfos();
-
   
