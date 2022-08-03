@@ -1,12 +1,12 @@
 import './style.css';
-import { GetLikes} from './Likes.js';
+import { GetLikes } from './Likes.js';
 import { addLikes } from './AddLikes.js';
-
 
 const body = document.querySelector('.contents');
 let LikeID = 0;
 
 // display the cards
+// eslint-disable-next-line import/prefer-default-export
 export const getInfos = async () => {
   const result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
   const response = await result.json();
@@ -21,7 +21,7 @@ export const getInfos = async () => {
                     <p>${element.diet}</p>
                     <button class="comments">Comments</button>`;
 
-    LikeID++
+    LikeID += 1;
     body.appendChild(div);
 
     // popup
