@@ -1,6 +1,8 @@
 import './style.css';
 import { GetLikes } from './Likes.js';
 import { addLikes } from './AddLikes.js';
+import { popup } from './popWindow.js';
+
 
 const body = document.querySelector('.contents');
 let LikeID = 0;
@@ -24,11 +26,9 @@ export const getInfos = async () => {
                     <p>${ArrValue[LikeID].likes} likes <p>
                     <h2>${element.name}</h2>
                     <p>${element.diet}</p>
-                    <button class="comments">Comments</button>`;
+                    <button class="comments"> Comments</button> `;
     LikeID += 1;
     body.appendChild(div);
-
-    // popup
   });
 };
 
@@ -40,9 +40,10 @@ body.addEventListener('click', (e) => {
   if (e.target.id) {
     GetLikes(id, NextEl);
     addLikes(e.target.id);
+  } else if (e.target.classList.contains('comments')) {
+    popup();
+    // console.log(e.target.classList)
   }
 });
-
-// document.addEventListener('DOMContentLoaded', GetLikes());
 
 getInfos();

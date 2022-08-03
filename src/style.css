@@ -24,6 +24,15 @@ nav {
   width: 25vw;
 }
 
+.popup {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
 .comments {
   color: rgb(8, 10, 14);
   outline: 0;
