@@ -8,19 +8,23 @@ let LikeID = 0;
 // display the cards
 // eslint-disable-next-line import/prefer-default-export
 export const getInfos = async () => {
+  // consuming list api
   const result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
   const response = await result.json();
-  // console.log(response)
+
+  // consuming likes api
+  const value = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xxyYZnyEypPJCG46fkIR/likes');
+  const ArrValue = await value.json();
+
   response.forEach((element) => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `<img src=${element.image_link} width="300px" height="300px"> <br/>
                     <p class="likes" id=${LikeID}>💗</p>
-                    <p> 0 likes <p>
+                    <p>${ArrValue[LikeID].likes} likes <p>
                     <h2>${element.name}</h2>
                     <p>${element.diet}</p>
                     <button class="comments">Comments</button>`;
-
     LikeID += 1;
     body.appendChild(div);
 
