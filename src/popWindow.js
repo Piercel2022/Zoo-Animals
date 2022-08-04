@@ -1,45 +1,51 @@
 
+// display popup window
 
-
+const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
 
-// eslint-disable-next-line import/prefer-default-export
-export const popup = async () => {
-  // consuming list api
-  const Result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
-  const Response = await Result.json();
-  // consuming likes api
+export const popupwindow = (arr,id) =>{
 
-  let LikeID = 0;
+  const index = id || 0;
+const element = arr[index];
 
-  const Value = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xxyYZnyEypPJCG46fkIR/likes');
-  const Arr = await Value.json();
-  const element = Arr[LikeID];
 
-    const div = document.createElement('div');
-    div.classList.add('popup');
-    div.innerHTML = `<div class="details">
-    <img src=${element.image_link} width="300px" height="300px"> <br/>
-                      <p class="likes" id=${LikeID}>💗</p>
-                      <h2>${element.name}</h2>
-                      <p>eats: ${element.diet}</p>
-                      <p>geo_range: ${element.geo_range}</p>
-                      <p>animal_type: ${element.animal_type}</p>
-                      <p>habitat: ${element.habitat}</p>
-                      <p>active_time: ${element.active_time}</p>
-                      <p>latin_name: ${element.latin_name}</p>
-                    </div>
-                    <div class="p-commemts">
-                        <p class="posted-commemts"> </p>
-                        <p class="date-commemts"> </p>
-                    </div>
+popup.innerHTML = `
+<div class="details">
+<p class="close"> X </p>
+<img src=${element.image_link} width="300px" height="300px" alt="image animal" class="pop-image"> <br/>
+  <h2>${element.name}</h2>
+  <div class="pop-items">
+      <p> <mark>eats</mark>: ${element.diet}</p>
+      <p><mark>geo_range</mark>: ${element.geo_range}</p>
+      <p><mark>animal_type</mark>: ${element.animal_type}</p>
+      <p><mark>habitat</mark>: ${element.habitat}</p>
+      <p><mark>active_time</mark>: ${element.active_time}</p>
+      <p><mark>latin_name</mark>: ${element.latin_name}</p>
+</div>
 
-                      <form action="">
-  <input type="text" placeholder="Your name">
-  <input type="text" placeholder="Your insights">
-  <input type="submit" value="Comments">
+</div>
+
+<div class="p-commemts">
+  <p class="date-commemts"> </p>
+  <p class="posted-commemts"> </p>
+    
+</div>
+
+<form action="">
+<input type="text" placeholder="Your name">
+<input type="text" placeholder="Your insights">
+<input type="submit" value="Comments">
 </form>
-                        `;
-    LikeID += 1;
-    body.appendChild(div);
-};
+`;
+}
+
+
+popup.addEventListener('click', (e) => {
+
+if(e.target.classList.contains('close')){
+    body.classList.toggle('hide');
+    popup.classList.toggle('hide');
+}
+
+})
