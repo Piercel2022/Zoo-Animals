@@ -1,9 +1,12 @@
 import './style.css';
 import { GetLikes } from './Likes.js';
 import { addLikes } from './AddLikes.js';
+import { popupwindow } from './popWindow.js';
 
+const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
 let LikeID = 0;
+let Likearray;
 
 // display the cards
 // eslint-disable-next-line import/prefer-default-export
@@ -16,6 +19,9 @@ export const getInfos = async () => {
   const value = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xxyYZnyEypPJCG46fkIR/likes');
   const ArrValue = await value.json();
 
+  Likearray = response;
+  popupwindow(Likearray);
+
   response.forEach((element) => {
     const div = document.createElement('div');
     div.classList.add('card');
@@ -24,15 +30,14 @@ export const getInfos = async () => {
                     <p>${ArrValue[LikeID].likes} likes <p>
                     <h2>${element.name}</h2>
                     <p>${element.diet}</p>
-                    <button class="comments">Comments</button>`;
-    LikeID += 1;
+                    <button type="button" class="comments" id=${LikeID}> Comments </button>
+                    `;
+
     body.appendChild(div);
 
-    // popup
+    LikeID += 1;
   });
 };
-
-// send the information to get element from  API
 
 body.addEventListener('click', (e) => {
   const id = JSON.parse(e.target.id);
@@ -40,9 +45,15 @@ body.addEventListener('click', (e) => {
   if (e.target.id) {
     GetLikes(id, NextEl);
     addLikes(e.target.id);
+    popupwindow(Likearray, id);
+
+    if (e.target.classList.contains('comments')) {
+      body.classList.toggle('hide');
+      popup.classList.toggle('hide');
+    }
   }
 });
 
-// document.addEventListener('DOMContentLoaded', GetLikes());
+// send the information to get element from  API
 
 getInfos();
