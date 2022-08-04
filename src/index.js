@@ -7,6 +7,9 @@ import { displayComments } from './displayComments.js';
 
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
+
+const animalCount = document.querySelector('.Nbr-animals');
+
 let LikeID = 0;
 let Likearray;
 
@@ -16,6 +19,8 @@ export const getInfos = async () => {
   // consuming list api
   const result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
   const response = await result.json();
+
+  animalCount.textContent = response.length;
 
   // consuming likes api
   const value = await fetch('https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xxyYZnyEypPJCG46fkIR/likes');

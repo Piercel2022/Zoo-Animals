@@ -21,6 +21,7 @@ export const popupwindow = (arr, id) => {
       <p><mark>active_time</mark>: ${element.active_time}</p>
       <p><mark>latin_name</mark>: ${element.latin_name}</p>
 </div>
+<h2>Comments (<span class="Nbr-comments">0</span>)</h2>
 
 </div>
 
