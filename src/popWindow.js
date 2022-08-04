@@ -1,16 +1,14 @@
-
 // display popup window
 
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
 
-export const popupwindow = (arr,id) =>{
-
+// eslint-disable-next-line import/prefer-default-export
+export const popupwindow = (arr, id) => {
   const index = id || 0;
-const element = arr[index];
+  const element = arr[index];
 
-
-popup.innerHTML = `
+  popup.innerHTML = `
 <div class="details">
 <p class="close"> X </p>
 <img src=${element.image_link} width="300px" height="300px" alt="image animal" class="pop-image"> <br/>
@@ -38,14 +36,11 @@ popup.innerHTML = `
 <input type="submit" value="Comments">
 </form>
 `;
-}
-
+};
 
 popup.addEventListener('click', (e) => {
-
-if(e.target.classList.contains('close')){
+  if (e.target.classList.contains('close')) {
     body.classList.toggle('hide');
     popup.classList.toggle('hide');
-}
-
-})
+  }
+});
