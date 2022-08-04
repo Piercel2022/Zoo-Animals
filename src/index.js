@@ -2,6 +2,8 @@ import './style.css';
 import { GetLikes } from './Likes.js';
 import { addLikes } from './AddLikes.js';
 import { popupwindow } from './popWindow.js';
+import { Comment } from './comments.js';
+import { displayComments } from './displayComments.js';
 
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
@@ -46,6 +48,8 @@ body.addEventListener('click', (e) => {
     GetLikes(id, NextEl);
     addLikes(e.target.id);
     popupwindow(Likearray, id);
+    Comment(e.target.id);
+    displayComments(e.target.id);
 
     if (e.target.classList.contains('comments')) {
       body.classList.toggle('hide');

@@ -30,9 +30,9 @@ export const popupwindow = (arr, id) => {
     
 </div>
 
-<form action="">
-<input type="text" placeholder="Your name">
-<input type="text" placeholder="Your insights">
+<form action="" id="form">
+<input type="text" placeholder="Your name" class="name">
+<input type="text" placeholder="Your insights" class="insight">
 <input type="submit" value="Comments">
 </form>
 `;
