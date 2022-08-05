@@ -17,7 +17,7 @@ let Likearray;
 // eslint-disable-next-line import/prefer-default-export
 export const getInfos = async () => {
   // consuming list api
-  const result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/10');
+  const result = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand/9');
   const response = await result.json();
 
   animalCount.textContent = response.length;
@@ -34,10 +34,10 @@ export const getInfos = async () => {
     div.classList.add('card');
     div.innerHTML = `<img src=${element.image_link} width="300px" height="300px"> <br/>
                     <p class="likes" id=${LikeID}>💗</p>
-                    <p>${ArrValue[LikeID].likes} likes <p>
-                    <h2>${element.name}</h2>
-                    <p>${element.diet}</p>
-                    <button type="button" class="comments" id=${LikeID}> Comments </button>
+                    <p class="likes-number">${ArrValue[LikeID].likes} likes <p>
+                    <h2 class="animal-name">${element.name}</h2>
+                    <p class="description">${element.diet}</p>
+                    <button type="button" class="comments" id=${LikeID}> Comments </button><br/><br/>
                     `;
 
     body.appendChild(div);

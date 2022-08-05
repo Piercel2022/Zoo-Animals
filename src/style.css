@@ -1,6 +1,6 @@
 
 .container {
-  width: 100vw;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,7 @@ nav {
   align-items: center;
   gap: 20px;
   justify-content: center;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -32,8 +33,7 @@ nav {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  /* justify-content: center; */
+  justify-content: flex-start;
   align-items: center;
   gap: 20px;
   position: absolute;
@@ -45,7 +45,7 @@ nav {
 
 .close {
   position: absolute;
-  right: 80px;
+  right: 40px;
   top: 5px;
   z-index: 3;
   font-size: 30px;
@@ -60,8 +60,9 @@ nav {
 }
 
 .pop-image {
-  width: 60vw;
-  height: 60vh;
+  width: 82vw;
+  height: 49vh;
+  margin-left: -1em;
 }
 
 .pop-items {
@@ -91,8 +92,181 @@ form {
   width: 25vw;
 }
 
+
 .apiCom {
   display: flex;
   align-items: center;
   gap: 20px;
+ }
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  bottom: 0;
+  color: #000;
+  background-color: #ababc4;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 504px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    height: 500px;
+    margin-top: -1em;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .likes-number {
+    display: flex;
+  }
+
+  .animal-name {
+    display: flex;
+    margin-top: 0.5em;
+    font-size: 1.7em;
+  }
+
+  .description {
+    display: flex;
+    margin-top: -0.5em;
+  }
+
+  .comments {
+    display: flex;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .pop-image {
+    width: 82vw;
+    height: 40vh;
+    margin-left: -2em;
+  }
+}
+
+@media (max-width: 768px) {
+  /* all your code here good luck */
+  .contents {
+    display: flex;
+    justify-content: center;
+    width: 46vw;
+  }
+
+  img {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    height: 300px;
+    margin-top: -1em;
+    margin-left: -5.7em;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -5.7em;
+  }
+
+  .likes-number {
+    display: flex;
+    margin-left: -5.7em;
+  }
+
+  .animal-name {
+    display: flex;
+    margin-top: 0.5em;
+    margin-left: -3.5em;
+    font-size: 1.7em;
+  }
+
+  .description {
+    display: flex;
+    margin-top: -0.5em;
+    margin-left: -5.7em;
+  }
+
+  .comments {
+    display: flex;
+    margin-left: -6.7em;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .pop-image {
+    width: 82vw;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+  .contents {
+    display: flex;
+    justify-content: space-between;
+    width: 57vh;
+  }
+
+  img {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    margin-left: -5em;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -5em;
+    margin-top: -1em;
+  }
+
+  .likes-number {
+    display: flex;
+    margin-left: -5em;
+    margin-top: -1em;
+  }
+
+  .animal-name {
+    display: flex;
+    margin-left: -2.78em;
+    margin-top: -0.5em;
+    font-size: 1.7em;
+    width: 300px;
+  }
+
+  .description {
+    display: flex;
+    margin-left: -5em;
+    width: 300px;
+    margin-top: -0.5em;
+  }
+
+  .comments {
+    margin-left: -5.9em;
+  }
+
+  footer {
+    display: none;
+  }
 }
