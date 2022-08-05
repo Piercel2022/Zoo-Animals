@@ -70,9 +70,9 @@ Any kind of browser.
 
 👤 **Author2**
 
-   - GitHub:[...](https://github.com/...)
-   - Twitter:[..](https://Twitter.com/...)
-   - LinkedIn:[..](https://LinkedIn.com/...)
+- GitHub: https://github.com/Piercel2022
+- Twitter: https://twitter.com/pier_celestin
+- LinkedIn: https://linkedin.com/in/piercelestinmax
 
 ## 🤝 Contributing
 

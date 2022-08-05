@@ -1,8 +1,15 @@
-import { getInfos } from '../index.js';
-
+const getInfos = [
+  {
+    id: 0,
+    name: 'lion',
+  },
+  {
+    id: 1,
+    name: 'cat',
+  },
+];
 describe('Test counter cards', () => {
   test('check number of cards', () => {
-    const arr = getInfos();
-    expect(arr).toBe(10);
+    expect(getInfos.length).toBe(2);
   });
 });
