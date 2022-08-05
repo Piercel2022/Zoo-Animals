@@ -2,6 +2,7 @@
 
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
+const footer = document.querySelector('.footer');
 
 // eslint-disable-next-line import/prefer-default-export
 export const popupwindow = (arr, id) => {
@@ -21,6 +22,7 @@ export const popupwindow = (arr, id) => {
       <p><mark>active_time</mark>: ${element.active_time}</p>
       <p><mark>latin_name</mark>: ${element.latin_name}</p>
 </div>
+<h2>Comments (<span class="Nbr-comments">0</span>)</h2>
 
 </div>
 
@@ -30,9 +32,9 @@ export const popupwindow = (arr, id) => {
     
 </div>
 
-<form action="">
-<input type="text" placeholder="Your name">
-<input type="text" placeholder="Your insights">
+<form action="" id="form">
+<input type="text" placeholder="Your name" class="name">
+<input type="text" placeholder="Your insights" class="insight">
 <input type="submit" value="Comments">
 </form>
 `;
@@ -42,5 +44,6 @@ popup.addEventListener('click', (e) => {
   if (e.target.classList.contains('close')) {
     body.classList.toggle('hide');
     popup.classList.toggle('hide');
+    footer.classList.toggle('hide');
   }
 });
