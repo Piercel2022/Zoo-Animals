@@ -19,5 +19,5 @@ export const displayComments = async (id) => {
     feedback.appendChild(div);
   });
 
-   return  comVAlue;
+  return comVAlue;
 };
