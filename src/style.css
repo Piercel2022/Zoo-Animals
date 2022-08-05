@@ -96,7 +96,3 @@ form {
   align-items: center;
   gap: 20px;
 }
-
-@media only screen and (max-width: 768px) {
-  /* all your code here good luck */
-}

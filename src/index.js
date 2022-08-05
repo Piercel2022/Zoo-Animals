@@ -44,6 +44,8 @@ export const getInfos = async () => {
 
     LikeID += 1;
   });
+
+  return response;
 };
 
 body.addEventListener('click', (e) => {
