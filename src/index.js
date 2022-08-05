@@ -7,6 +7,7 @@ import { displayComments } from './displayComments.js';
 
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
+const footer = document.querySelector('.footer');
 
 const animalCount = document.querySelector('.Nbr-animals');
 
@@ -61,6 +62,7 @@ body.addEventListener('click', (e) => {
     if (e.target.classList.contains('comments')) {
       body.classList.toggle('hide');
       popup.classList.toggle('hide');
+      footer.classList.toggle('hide');
     }
   }
 });

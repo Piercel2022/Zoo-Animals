@@ -2,6 +2,7 @@
 
 const popup = document.querySelector('.popup');
 const body = document.querySelector('.contents');
+const footer = document.querySelector('.footer');
 
 // eslint-disable-next-line import/prefer-default-export
 export const popupwindow = (arr, id) => {
@@ -43,5 +44,6 @@ popup.addEventListener('click', (e) => {
   if (e.target.classList.contains('close')) {
     body.classList.toggle('hide');
     popup.classList.toggle('hide');
+    footer.classList.toggle('hide');
   }
 });

@@ -36,6 +36,7 @@ nav {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  background-color: bisque;
   position: absolute;
   overflow-y: scroll;
   top: 0;
@@ -60,8 +61,8 @@ nav {
 }
 
 .pop-image {
-  width: 82vw;
-  height: 49vh;
+  width: 70vw;
+  height: 80vh;
   margin-left: -1em;
 }
 
@@ -92,12 +93,12 @@ form {
   width: 25vw;
 }
 
-
 .apiCom {
   display: flex;
   align-items: center;
   gap: 20px;
- }
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -160,6 +161,10 @@ footer {
     height: 40vh;
     margin-left: -2em;
   }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -217,6 +222,10 @@ footer {
     width: 82vw;
     height: 40vh;
   }
+
+  .hide {
+    display: none;
+  }
 }
 
 @media (min-width: 770px) and (max-width: 1200px) {
@@ -267,6 +276,10 @@ footer {
   }
 
   footer {
+    display: none;
+  }
+
+  .hide {
     display: none;
   }
 }
