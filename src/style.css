@@ -1,0 +1,285 @@
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+nav {
+  width: 100vw;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.contents {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.card {
+  width: 25vw;
+}
+
+.popup {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  background-color: bisque;
+  position: absolute;
+  overflow-y: scroll;
+  top: 0;
+  z-index: 2;
+  padding: 20px;
+}
+
+.close {
+  position: absolute;
+  right: 40px;
+  top: 5px;
+  z-index: 3;
+  font-size: 30px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.pop-image {
+  width: 70vw;
+  height: 80vh;
+  margin-left: -1em;
+}
+
+.pop-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px 10px;
+  width: 60vw;
+}
+
+.hide {
+  display: none;
+}
+
+.comments {
+  color: rgb(8, 10, 14);
+  outline: 0;
+  border: solid 1px rgba(92, 168, 240, 0.8);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 25vw;
+}
+
+.apiCom {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: sticky;
+  text-align: center;
+  bottom: 0;
+  color: #000;
+  background-color: #ababc4;
+  z-index: 2;
+}
+
+@media only screen and (max-width: 504px) {
+  .contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  img {
+    display: flex;
+    justify-content: flex-start;
+    width: 500px;
+    height: 500px;
+    margin-top: -1em;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .likes-number {
+    display: flex;
+  }
+
+  .animal-name {
+    display: flex;
+    margin-top: 0.5em;
+    font-size: 1.7em;
+  }
+
+  .description {
+    display: flex;
+    margin-top: -0.5em;
+  }
+
+  .comments {
+    display: flex;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .pop-image {
+    width: 82vw;
+    height: 40vh;
+    margin-left: -2em;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  /* all your code here good luck */
+  .contents {
+    display: flex;
+    justify-content: center;
+    width: 46vw;
+  }
+
+  img {
+    display: flex;
+    justify-content: flex-start;
+    width: 300px;
+    height: 300px;
+    margin-top: -1em;
+    margin-left: -5.7em;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -5.7em;
+  }
+
+  .likes-number {
+    display: flex;
+    margin-left: -5.7em;
+  }
+
+  .animal-name {
+    display: flex;
+    margin-top: 0.5em;
+    margin-left: -3.5em;
+    font-size: 1.7em;
+  }
+
+  .description {
+    display: flex;
+    margin-top: -0.5em;
+    margin-left: -5.7em;
+  }
+
+  .comments {
+    display: flex;
+    margin-left: -6.7em;
+    margin-top: 1.5em;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .pop-image {
+    width: 82vw;
+    height: 40vh;
+  }
+
+  .hide {
+    display: none;
+  }
+}
+
+@media (min-width: 770px) and (max-width: 1200px) {
+  .contents {
+    display: flex;
+    justify-content: space-between;
+    width: 57vh;
+  }
+
+  img {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+    height: 300px;
+    margin-left: -5em;
+  }
+
+  .likes {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: -5em;
+    margin-top: -1em;
+  }
+
+  .likes-number {
+    display: flex;
+    margin-left: -5em;
+    margin-top: -1em;
+  }
+
+  .animal-name {
+    display: flex;
+    margin-left: -2.78em;
+    margin-top: -0.5em;
+    font-size: 1.7em;
+    width: 300px;
+  }
+
+  .description {
+    display: flex;
+    margin-left: -5em;
+    width: 300px;
+    margin-top: -0.5em;
+  }
+
+  .comments {
+    margin-left: -5.9em;
+  }
+
+  footer {
+    display: none;
+  }
+
+  .hide {
+    display: none;
+  }
+}
