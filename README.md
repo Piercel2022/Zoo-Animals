@@ -32,11 +32,15 @@ This project  displays 10 random zoo  animals and all the details about the spec
 
 1. Clone this repository or download the zip folder:
 
-**``https://github.com/Pamphilemkp/Leaderboard-project.git`**
+```
+git clone https://github.com/Piercel2022/Zoo-Animals.git
+```
 
 2. Navigate to the location of the folder in your machine:
 
-**``you@your-Pc-name:~$ cd <Zoo-Animals>``**
+```
+cd Zoo-Animals
+```
 
 To get a local copy up and run the project follow these simple example steps above.
 
@@ -51,9 +55,19 @@ Any kind of browser.
 
 ## To  run and use it:
 
- 1. Run **``npm install``**
- 2. Then **``npm run build``**
- 3.  And finally **``npm start``** which will open it and run automatically  in your default browser.
+ 1. Run :
+ ```
+ npm install
+ ```
+ 2. Then :
+ ```
+ npm run build
+ ```
+ 3.  And finally 
+ ```
+ npm start
+ ``` 
+ which will open it and run automatically  in your default browser.
 
 
 ### Deployment
