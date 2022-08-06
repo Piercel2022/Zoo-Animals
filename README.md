@@ -73,11 +73,6 @@ Any kind of browser.
  ``` 
  which will open it and run automatically  in your default browser.
 
-
-### Deployment
-
-[See project here](https://Piercel2022.github.io/Zoo-Animals/)
-
 ## Authors
 
 👤 **Author1**
