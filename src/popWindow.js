@@ -11,7 +11,7 @@ export const popupwindow = (arr, id) => {
 
   popup.innerHTML = `
 <div class="details">
-<p class="close"> X </p>
+<p class="close"> ✖️ </p>
 <img src=${element.image_link} width="300px" height="300px" alt="image animal" class="pop-image"> <br/>
   <h2>${element.name}</h2>
   <div class="pop-items">
