@@ -92,7 +92,7 @@ Any kind of browser.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Piercel2022/Zoo-Animals.git/issues).
+Feel free to check the [issues page](https://github.com/Piercel2022/Zoo-Animals/issues).
 
 ## Show your support
 
