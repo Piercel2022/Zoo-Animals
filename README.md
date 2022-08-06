@@ -16,12 +16,16 @@ This project  displays 10 random zoo  animals and all the details about the spec
 - HTML
 - CSS
 - JAVASCRIPT (MODULES)
-- WEBPACK
+- WEBPACK : A static module bundler for modern JavaScript applications.
 - APIs :
       - [Zoo Animals API](https://zoo-animal-api.herokuapp.com/animals/)
       - [us-central1-involvement-api](https://us-central1-involvement-api.cloudfunctions.net/capstoneApi)
-- JEST 
-- LINTER
+- JEST: A delightful JavaScript Testing Framework with a focus on simplicity.
+- LINTERS:
+ - Lighthouse: An open-source, automated tool for improving the quality of web pages. It has audits for performance, accessibility, progressive web apps, SEO and more.
+ - Webhint: A customizable linting tool that helps you improve your site's accessibility, speed, cross-browser compatibility, and more by checking your code for best practices and common errors.
+ - Stylelint : A mighty, modern linter that helps you avoid errors and enforce conventions in your styles.
+ - 
 
 ## Live Demo 
 
