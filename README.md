@@ -6,6 +6,10 @@
 
 This project  displays 10 random zoo  animals and all the details about the specific animal when the user clicks on the comments button!  the user can like , comments and also learn the zoology  evreytime they will come back to the website.
 
+![mobile](https://user-images.githubusercontent.com/98626003/183245489-9b73432e-25f7-41c6-83a0-412475dec651.png)
+![desktop](https://user-images.githubusercontent.com/98626003/183245491-c1024dfe-452d-4474-9491-cf7eea3fd08e.png)
+
+
 
 ## Built With
 
