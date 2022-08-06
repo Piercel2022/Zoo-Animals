@@ -12,6 +12,7 @@ nav {
   display: flex;
   gap: 30px;
   align-items: center;
+  margin-left: 150px;
 }
 
 .contents {
@@ -36,7 +37,10 @@ nav {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
-  background-color: bisque;
+
+  /* background-image: url('https://wallpaper.dog/large/10717714.jpg'); */
+  background-color: rgba(17, 16, 16, 0.9);
+  color: white;
   position: absolute;
   overflow-y: scroll;
   top: 0;
@@ -83,6 +87,15 @@ nav {
   border: solid 1px rgba(92, 168, 240, 0.8);
   padding: 5px;
   border-radius: 5px;
+  width: 77px;
+}
+
+.comments-popwindow {
+  border-radius: 5px;
+  width: 77px;
+  outline: 0;
+  border: solid 1px rgba(92, 168, 240, 0.8);
+  align-self: center;
 }
 
 form {
@@ -117,6 +130,10 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  nav {
+    margin-left: 50px;
   }
 
   img {
@@ -173,6 +190,10 @@ footer {
     display: flex;
     justify-content: center;
     width: 46vw;
+  }
+
+  nav {
+    margin-left: 80px;
   }
 
   img {
@@ -233,6 +254,10 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 57vh;
+  }
+
+  nav {
+    margin-left: 120px;
   }
 
   img {

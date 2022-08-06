@@ -11,7 +11,7 @@ export const popupwindow = (arr, id) => {
 
   popup.innerHTML = `
 <div class="details">
-<p class="close"> X </p>
+<p class="close"> ✖️ </p>
 <img src=${element.image_link} width="300px" height="300px" alt="image animal" class="pop-image"> <br/>
   <h2>${element.name}</h2>
   <div class="pop-items">
@@ -35,7 +35,7 @@ export const popupwindow = (arr, id) => {
 <form action="" id="form">
 <input type="text" placeholder="Your name" class="name">
 <input type="text" placeholder="Your insights" class="insight">
-<input type="submit" value="Comments">
+<input type="submit" value="Comments" class="comments-popwindow">
 </form>
 `;
 };
