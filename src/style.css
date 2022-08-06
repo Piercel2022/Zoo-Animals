@@ -12,6 +12,7 @@ nav {
   display: flex;
   gap: 30px;
   align-items: center;
+  margin-left: 150px;
 }
 
 .contents {
@@ -118,6 +119,10 @@ footer {
     align-items: center;
     justify-content: center;
   }
+  
+  nav {
+  margin-left: 50px;
+}
 
   img {
     display: flex;
@@ -174,6 +179,9 @@ footer {
     justify-content: center;
     width: 46vw;
   }
+   nav {
+  margin-left: 80px;
+}
 
   img {
     display: flex;
@@ -234,6 +242,9 @@ footer {
     justify-content: space-between;
     width: 57vh;
   }
+   nav {
+  margin-left: 120px;
+}
 
   img {
     display: flex;
