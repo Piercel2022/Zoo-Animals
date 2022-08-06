@@ -34,7 +34,7 @@ export const getInfos = async () => {
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `<img src=${element.image_link} width="300px" height="300px"> <br/>
-                    <p class="likes" id=${LikeID}>💗</p>
+                    <p class="likes" id=${LikeID}>❤️</p>
                     <p class="likes-number">${ArrValue[LikeID].likes} likes <p>
                     <h2 class="animal-name">${element.name}</h2>
                     <p class="description">${element.diet}</p>
